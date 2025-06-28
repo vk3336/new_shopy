@@ -19,12 +19,12 @@ const BASE_URL = process.env.BASE_URL || 'http://localhost:7000';
 connectDB();
 
 // Middleware
-app.use(cors());
-app.use(helmet());
-app.use(hpp());
-app.use(compression());
-app.use(express.json());
-app.use(morgan('dev'));
+// app.use(cors());
+// app.use(helmet());
+// app.use(hpp());
+// app.use(compression());
+// app.use(express.json());
+// app.use(morgan('dev'));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
