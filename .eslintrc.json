@@ -3,10 +3,16 @@
     "node": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["node"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
-    "no-console": "off"
+    "no-console": "off",
+    "node/no-deprecated-api": "warn"
   }
 }
